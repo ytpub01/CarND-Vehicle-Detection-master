@@ -43,7 +43,9 @@ I tried different color spaces, HOG parameters (orientations, pixels\_per\_cell)
 
 #### 2. I trained a linear SVC classifier using my selected HOG and color features, see code cell 7, and scaled the features.
 
-I divided the data after shuffling randomly into a 70% trainining set and a 30% test set. I thought that a larger test set than 20% would avoid overfitting, and that worked better in identifying less false positives.
+I divided the data after shuffling randomly into a 70% trainining set and a 30% test set. A larger test set than 20% lessens overfitting, and that worked better in identifying less false positives.
+
+Note: Because of space restrictions on github, my code loads the pickle file containing the svc classifier if the vehicle and non-vehicle directories are empty. If you want the notebook to rebuild the classifier, please unzip https://s3.amazonaws.com/udacity-sdc/Vehicle\_Tracking/vehicles.zip and https://s3.amazonaws.com/udacity-sdc/Vehicle\_Tracking/non-vehicles.zip into the project directory and rerun the notebook.
 
 \newpage
 
